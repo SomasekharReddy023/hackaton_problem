@@ -1,0 +1,26 @@
+Title: Data Scientist - Job Description & Skills
+
+**Job Overview:**
+A Data Scientist is a professional who analyzes and interprets complex digital data to help organizations make better business decisions. They use a combination of statistics, programming, and domain knowledge to extract meaningful insights.
+
+**Key Responsibilities:**
+- Collecting, cleaning, and preprocessing large datasets.
+- Developing and implementing statistical models and machine learning algorithms.
+- Creating data visualizations and reports to communicate findings.
+- Collaborating with business teams to identify problems and opportunities.
+- Building predictive models to forecast future trends.
+
+**Required Skills:**
+- **Technical Skills:**
+    - Programming: Python (Pandas, NumPy, Scikit-learn), R.
+    - Databases: SQL, NoSQL.
+    - Machine Learning: Supervised and unsupervised learning, deep learning.
+    - Big Data Technologies: Hadoop, Spark.
+- **Soft Skills:**
+    - Problem-solving and critical thinking.
+    - Strong communication and presentation skills.
+    - Business acumen.
+    - Attention to detail.
+
+**Career Prospects:**
+The demand for data scientists is very high and is projected to grow significantly in the coming years. Career paths include moving into senior roles, specializing in specific areas like AI or business intelligence, or transitioning into a management position.

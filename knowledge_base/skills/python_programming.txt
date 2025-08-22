@@ -1,0 +1,22 @@
+Title: Python Programming - Essential Skills
+
+**Why Python?**
+Python is one of the most popular programming languages, widely used in data science, AI, web development, and automation.
+
+**Core Concepts:**
+- Variables, data types, and operators.
+- Control structures: if-else, loops.
+- Functions and modules.
+- Object-Oriented Programming (OOP).
+- Exception handling.
+
+**Advanced Topics:**
+- Libraries: NumPy, Pandas, Matplotlib.
+- Web Development: Flask, Django.
+- Machine Learning: Scikit-learn, TensorFlow.
+- Scripting and automation.
+
+**Tips to Learn:**
+- Practice coding daily.
+- Work on small projects (calculators, web scrapers).
+- Contribute to open-source repositories.

@@ -1,0 +1,26 @@
+Title: Software Engineer - Job Description & Skills
+
+**Job Overview:**
+A Software Engineer designs, develops, tests, and maintains software applications and systems. They work across the software development lifecycle to build reliable, scalable, and secure solutions.
+
+**Key Responsibilities:**
+- Writing clean, efficient, and maintainable code.
+- Collaborating with cross-functional teams to define requirements.
+- Debugging and fixing software defects.
+- Participating in code reviews and design discussions.
+- Ensuring software security and scalability.
+
+**Required Skills:**
+- **Technical Skills:**
+    - Programming Languages: Java, Python, C++, JavaScript.
+    - Databases: SQL & NoSQL.
+    - Tools: Git, Docker, Kubernetes.
+    - Knowledge of Agile methodologies and software design patterns.
+- **Soft Skills:**
+    - Problem-solving mindset.
+    - Strong teamwork and collaboration.
+    - Adaptability to new technologies.
+    - Time management.
+
+**Career Prospects:**
+Software Engineers can advance into roles such as Senior Engineer, Tech Lead, Solutions Architect, or Engineering Manager. The field has opportunities across industries like finance, healthcare, AI, and cloud computing.

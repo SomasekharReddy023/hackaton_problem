@@ -1,0 +1,19 @@
+Title: Machine Learning - Core Knowledge
+
+**Overview:**
+Machine Learning (ML) is a branch of AI that enables systems to learn and improve from data without explicit programming.
+
+**Key Areas:**
+- **Supervised Learning:** Classification, regression.
+- **Unsupervised Learning:** Clustering, dimensionality reduction.
+- **Reinforcement Learning:** Agent-based learning via rewards.
+- **Deep Learning:** Neural networks and advanced architectures.
+
+**Required Skills:**
+- Python (NumPy, Scikit-learn, TensorFlow, PyTorch).
+- Probability & Statistics.
+- Linear Algebra and Calculus basics.
+- Data preprocessing and feature engineering.
+
+**Applications:**
+Recommendation systems, fraud detection, speech recognition, medical diagnosis.

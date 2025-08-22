@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI 360 Career Mentor Bot</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f4f6;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+    header {
+      background: #2563eb;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .chat-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      max-width: 800px;
+      width: 100%;
+      margin: auto;
+      padding: 20px;
+    }
+    .chat-box {
+      flex: 1;
+      overflow-y: auto;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 15px;
+    }
+    .message {
+      margin: 10px 0;
+      padding: 12px;
+      border-radius: 12px;
+      line-height: 1.4;
+      max-width: 80%;
+      word-wrap: break-word;
+    }
+    .user {
+      background: #2563eb;
+      color: #fff;
+      margin-left: auto;
+      text-align: right;
+    }
+    .bot {
+      background: #e5e7eb;
+      color: #111;
+      margin-right: auto;
+      text-align: left;
+    }
+    .input-container {
+      display: flex;
+      margin-top: 15px;
+      gap: 10px;
+    }
+    input[type="text"] {
+      flex: 1;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      outline: none;
+    }
+    button {
+      padding: 12px 18px;
+      background: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    button:disabled {
+      background: #9ca3af;
+      cursor: not-allowed;
+    }
+    .note {
+      font-size: 12px;
+      color: gray;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>🎓 AI 360 Career Mentor Bot</header>
+  <div class="chat-container">
+    <div class="chat-box" id="chatBox"></div>
+    <div class="input-container">
+      <input type="text" id="queryInput" placeholder="Ask about careers...">
+      <button id="sendBtn" onclick="sendQuery()">Send</button>
+    </div>
+  </div>
+
+  <script>
+    const chatBox = document.getElementById("chatBox");
+    const queryInput = document.getElementById("queryInput");
+    const sendBtn = document.getElementById("sendBtn");
+
+    async function sendQuery() {
+      const query = queryInput.value.trim();
+      if (!query) return;
+
+      appendMessage("user", query);
+      queryInput.value = "";
+      sendBtn.disabled = true;
+
+      try {
+        const res = await fetch(`http://localhost:8000/chat?query=${encodeURIComponent(query)}`);
+        const data = await res.json();
+
+        if (data.error) {
+          appendMessage("bot", "❌ " + data.error);
+        } else {
+          let botMsg = "";
+          if (typeof data.response === "object") {
+            botMsg += `<b>Career:</b> ${data.response.career}<br>`;
+            botMsg += `<b>Description:</b> ${data.response.description}<br>`;
+            botMsg += `<b>Skills:</b> ${data.response.skills_required?.join(", ")}<br>`;
+            botMsg += `<b>Learning Path:</b> ${data.response.learning_path?.join(" → ")}<br>`;
+            botMsg += `<b>Future Scope:</b> ${data.response.future_scope}<br>`;
+          } else {
+            botMsg = data.response;
+          }
+          appendMessage("bot", botMsg);
+        }
+      } catch (err) {
+        appendMessage("bot", "⚠️ Unable to connect to backend.");
+      } finally {
+        sendBtn.disabled = false;
+      }
+    }
+
+    function appendMessage(sender, text) {
+      const div = document.createElement("div");
+      div.classList.add("message", sender);
+      div.innerHTML = text;
+      chatBox.appendChild(div);
+      chatBox.scrollTop = chatBox.scrollHeight;
+    }
+
+    queryInput.addEventListener("keypress", (e) => {
+      if (e.key === "Enter") sendQuery();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+Title: Cloud Engineer - Job Description & Skills
+
+**Job Overview:**
+A Cloud Engineer manages and optimizes cloud infrastructure and services for organizations. They work with platforms like AWS, Azure, and Google Cloud to ensure scalability, reliability, and cost-efficiency.
+
+**Key Responsibilities:**
+- Designing and deploying cloud solutions.
+- Managing cloud resources and costs.
+- Ensuring security and compliance in cloud systems.
+- Automating infrastructure using IaC tools.
+- Troubleshooting performance and availability issues.
+
+**Required Skills:**
+- **Technical Skills:**
+    - Cloud Platforms: AWS, Azure, GCP.
+    - Infrastructure as Code: Terraform, Ansible.
+    - DevOps Tools: Jenkins, GitHub Actions, Docker, Kubernetes.
+    - Networking & Security fundamentals.
+- **Soft Skills:**
+    - Analytical and problem-solving ability.
+    - Communication with stakeholders.
+    - Documentation and reporting.
+    - Continuous learning mindset.
+
+**Career Prospects:**
+Cloud Engineers are in high demand. Career progression includes roles like Cloud Architect, DevOps Engineer, or Cloud Security Specialist.
